@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root{
+    --color-primario: #F3F5FC;    
+    --fuente-inter: 'inter',sans-serif;
+}
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+header{
+    padding: 40px;
+}
+body, html {
+    background-color: var(--color-primario);
+    height: 100vh;
+    font-family: var(--fuente-inter);
+}
+
+.container_contenido {
+    padding: 2.5rem 2.5rem 2.5rem 15rem ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    
+    align-items: center; /* Centrar verticalmente */
+    justify-items: center; /* Centrar horizontalmente */
+    
+    
+    
+   
+    
+}
+
+
+/* left*/
+.left{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-start;
+    gap: 13.25rem;    
+}
+.texto_1 {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: auto;
+
+    
+}
+.frases_secreta{
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+/* left*/
+.right{
+    width: 100%;
+    background-color: white;
+    border: solid white;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow( 10px 10px 10px   #E8E8E8);
+    align-items: center; /* Centrar verticalmente */
+    justify-items: center; /* Centrar horizontalmente */
+    text-align: center;
+}
+
+/*botones*/
+.chute_container_botones {
+    gap: 1.5rem;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    padding: 0 px 0 px 32px 0px;
+    
+    
+    
+    
+
+}
+
+#boton_copiar {
+    margin-top: 1rem;
+    position: grid;
+    color: #0A3871;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+    right: 0px;
+    bottom: 0px;
+   
+    
+
+}
+/*23*/
+button { 
+    width: 20.5rem;
+    height: 4.188rem;
+    border-radius: 1.5rem;
+    border: 0.1rem solid #0A3871;
+
+    cursor: pointer;
+    
+}
+.container__boton_encriptar{
+    
+    background-color: #0A3871;
+    color: #F3F5FC;
+}
+.container__boton{
+    color: #0A3871;
+    background-color: #D8DFE8;
+}
+/*botones*/
+@media screen and (max-width: 768px ) {
+   
+    .container_contenido {
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem; /* Ajustar el padding para dispositivos más pequeños */
+        gap: 2rem; /* Reducir el gap para dispositivos más pequeños */
+        width: 100%;
+        max-width: 100%;
+        align-items: center; /* Centrar verticalmente */
+        justify-items: center;
+        text-align: center;
+    }
+    .right{
+        text-align: center;
+    }
+    .left {
+        text-align: center;
+    }
+    .right img {
+        display: none;
+    }
+  
+
+    .chute_container_botones {
+        flex-direction: column; /* Alinear los botones en columna en lugar de fila */
+        gap: 1rem; /* Ajustar el espacio entre botones */
+        text-align: center;
+        
+    }
+    button {
+        
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    .container_contenido {
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem; /* Ajustar el padding para dispositivos más pequeños */
+        gap: 2rem; /* Reducir el gap para dispositivos más pequeños */
+        width: 100%;
+        max-width: 100%;
+        align-items: center; /* Centrar verticalmente */
+        justify-items: center;
+        text-align: center;
+    }
+    .right{
+        text-align: center;
+    }
+    .left {
+        text-align: center;
+    }
+    .right img {
+        display: none;
+    }
+  
+
+    .chute_container_botones {
+        flex-direction: column; /* Alinear los botones en columna en lugar de fila */
+        gap: 1rem; /* Ajustar el espacio entre botones */
+        text-align: center;
+        
+    }
+    button {
+        
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

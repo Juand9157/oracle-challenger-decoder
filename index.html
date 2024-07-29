@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encripto</title>
+</head>
+<body>
+    <header >
+        <img src="Assets/Frame 6.png" alt="alura" class="letra_a" >
+    </header>
+    <main>
+        
+        <div class="container_contenido">
+            
+                
+            <div class="left">
+                
+                <textarea type="text" placeholder="Ingresa el texto aqui" id="frase_secreta" value="" class="frases_secreta"  style="color: #0A3871" ></textarea>
+                <div>
+                    <div class="texto_1">
+                        <img src="Assets/bi_exclamation-circle-fill.png" alt="exclamacion" class="circulo" enabled>
+                        <p style="color: black; " class="texto_validacion">Solo letras minúsculas y sin acentos</p>  
+    
+                    </div>
+                     
+                    <div class="chute_container_botones">
+                        <button onclick="encriptar_frase_numeros()" class="container__boton_encriptar">Encriptar</button>
+                        <button onclick="desencriptar_frase_numeros()" class="container__boton">Desencriptar</button>
+                        
+                    </div>
+
+                </div>
+                
+                
+            </div>
+                
+            <div class="right">
+                
+                <img src="Assets/Muñeco.png" alt="muñeco de pag" class="muneco" disabled>
+                <div class="container_texto">
+                    <h1 style="color: black" class="h1" id="mensaje_no_encontrado"></h1>
+                    <p style="color: black" class="texto__parrafo"  ></p>
+                </div> 
+                <button onclick="copiar()" class="container__boton" id="boton_copiar" disabled>Copiar</button>   
+                
+            </div>
+
+        </div>
+        
+        
+    </main>
+    <footer>
+        <p class="presentacion_desarrollador"> Desarrollado por Juan D. Ospitia en el 2024. </p>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
